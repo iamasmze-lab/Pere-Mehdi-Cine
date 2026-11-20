@@ -1,0 +1,21 @@
+[project]
+name = "pere-mehdi-cine"
+version = "1.0.0"
+description = "Père Mehdi Ciné - films, séries, dessins animés et football gratuits et légaux"
+requires-python = ">=3.9"
+dependencies = ["flet==0.28.3", "yt-dlp", "certifi"]
+
+[tool.flet]
+org = "km.peremehdi"
+product = "Père Mehdi Ciné"
+company = "Père Mehdi"
+copyright = "Ismael"
+
+[tool.flet.app]
+path = "."
+
+[tool.flet.android.permission]
+"android.permission.INTERNET" = true
+"android.permission.READ_EXTERNAL_STORAGE" = true
+"android.permission.WRITE_EXTERNAL_STORAGE" = true
+"android.permission.MANAGE_EXTERNAL_STORAGE" = true
